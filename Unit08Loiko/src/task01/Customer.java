@@ -1,4 +1,4 @@
-package task01;
+package task01; // сколько уровней пакетов должно быть определено?
 
 public class Customer {
     private int id;
@@ -68,6 +68,7 @@ public class Customer {
     public Customer() {
     }
 
+    // не нужно конструктор определять так далеко в коде
     public Customer(int id, String lastName, String firstName, String middleName, String address,
                     long creditCardNumber, long bankAccountNumber) {
         this.id = id;
@@ -84,6 +85,6 @@ public class Customer {
         return "Customer:{" + "firstName='" + firstName + '\'' +", middleName='" + middleName + '\'' +", lastName='" + lastName + '\''  + ", id=" + id +
                 ", address='" + address + '\'' + ", creditCardNumber=" + creditCardNumber + ", bankAccountNumber=" + bankAccountNumber + "}\n";
     }
-
+// equals, hasCode ?
 
 }
